@@ -4,12 +4,11 @@ import ExpenseDate from "./ExpenseDate";
 import "./ExpenseItem.css";
 
 const ExpenseItem = ({ date, title, amount }) => {
-
   const [title2, setTitle2] = useState(title);
 
   const clickHandler = () => {
-    setTitle2('Updated!!');
-    console.log('Clicked!');
+    setTitle2("Updated!!");
+    console.log("Clicked!");
   };
 
   return (
@@ -22,6 +21,6 @@ const ExpenseItem = ({ date, title, amount }) => {
       <button onClick={clickHandler}>Change Title</button>
     </Card>
   );
-}
+};
 
 export default ExpenseItem;
