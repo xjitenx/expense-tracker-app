@@ -22,7 +22,7 @@ const ExpenseForm = ({ onSaveExpenseData, onCancel }) => {
     event.preventDefault();
     const enteredExpenseData = {
       title: enteredTitle,
-      amount: enteredAmount,
+      amount: +enteredAmount,
       date: new Date(enteredDate),
     };
 
